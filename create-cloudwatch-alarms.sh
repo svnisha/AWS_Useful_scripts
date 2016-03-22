@@ -4,7 +4,7 @@
 
 # ALARMACTION="arn:aws:sns:us-east-1:YOURACCOUNTNUMBER:YOURSNSALERTNAME"
 
-# Verify AWS CLI Credentials are setup
+# Verify AWS CLI Credentials are setup 1
 # http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html
 if ! [ -f ~/.aws/config ]; then
   if ! [ -f ~/.aws/credentials ]; then
