@@ -1,0 +1,26 @@
+flush;
+spdflush;
+
+spdadd 169.254.12.126/30 169.254.12.125/30 any -P out ipsec
+   esp/tunnel/96.119.245.213-52.27.97.232/require;
+
+spdadd 169.254.12.125/30 169.254.12.126/30 any -P in ipsec
+   esp/tunnel/52.27.97.232-96.119.245.213/require;
+
+spdadd 169.254.13.22/30 169.254.13.21/30 any -P out ipsec
+   esp/tunnel/96.119.245.213-52.33.28.109/require;
+
+spdadd 169.254.13.21/30 169.254.13.22/30 any -P in ipsec
+   esp/tunnel/52.33.28.109-96.119.245.213/require;
+
+spdadd 169.254.12.126/30 10.100.1.0/24 any -P out ipsec
+   esp/tunnel/96.119.245.213-52.27.97.232/require;
+
+spdadd 10.100.1.0/24 169.254.12.126/30 any -P in ipsec
+   esp/tunnel/52.27.97.232-96.119.245.213/require;
+
+spdadd 169.254.13.22/30 10.100.1.0/24 any -P out ipsec
+   esp/tunnel/96.119.245.213-52.33.28.109/require;
+
+spdadd 10.100.1.0/24 169.254.13.22/30 any -P in ipsec
+   esp/tunnel/52.33.28.109-96.119.245.213/require;

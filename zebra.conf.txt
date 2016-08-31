@@ -1,0 +1,10 @@
+hostname hybrid-cloud-poc1
+password HYBcloudP0c
+enable password HYBcloudP0c
+!
+! list interfaces
+interface eth0
+interface eth1
+interface lo
+!
+line vty

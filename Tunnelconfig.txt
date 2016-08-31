@@ -1,0 +1,81 @@
+Pre-Shared Key           : .PjVw3eu1KUCyXIxrCE2Gumc39A3bbbA
+
+Outside IP Addresses:
+  - Customer Gateway 		        : 96.119.245.213 
+  - Virtual Private Gateway	        : 52.27.97.232
+		
+Inside IP Addresses
+  - Customer Gateway         		: 169.254.12.126/30
+  - Virtual Private Gateway             : 169.254.12.125/30
+
+BGP Configuration Options:
+  - Customer Gateway ASN	          : 65000 
+  - Virtual Private  Gateway ASN          : 7224
+  - Neighbor IP Address     		  : 169.254.12.125
+  - Neighbor Hold Time       : 30
+
+
+
+Pre-Shared Key           : 2aSNkePtdLMEvIsPpmD7OfJGhRoe9XUx
+
+Outside IP Addresses:
+  - Customer Gateway 		        : 96.119.245.213 
+  - Virtual Private Gateway	        : 52.33.28.109
+		
+Inside IP Addresses
+  - Customer Gateway         		: 169.254.13.22/30
+  - Virtual Private Gateway             : 169.254.13.21/30
+
+BGP Configuration Options:
+  - Customer Gateway ASN	          : 65000 
+  - Virtual Private  Gateway ASN          : 7224
+  - Neighbor IP Address     		  : 169.254.13.21
+  - Neighbor Hold Time       : 30
+
+
+ip a a 169.254.12.126/30 dev eth0
+ip a a 169.254.13.22/30 dev eth0
+
+
+###################################################################
+
+Pre-Shared Key           : vsTq6RloZ2wCYPaNlLGt__YWajhdPC4I
+
+Outside IP Addresses:
+  - Customer Gateway 		        : 96.119.245.213 
+  - Virtual Private Gateway	        : 52.34.143.31
+		
+Inside IP Addresses
+  - Customer Gateway         		: 169.254.12.78/30
+  - Virtual Private Gateway             : 169.254.12.77/30
+
+
+BGP Configuration Options:
+  - Customer Gateway ASN	          : 65000 
+  - Virtual Private  Gateway ASN          : 7224
+  - Neighbor IP Address     		  : 169.254.12.77
+  - Neighbor Hold Time       : 30
+
+
+Pre-Shared Key           : 
+52.34.143.31	vsTq6RloZ2wCYPaNlLGt__YWajhdPC4I
+52.88.9.94	yzzAOuGMmSNs39Eu2n8owBy.tt.J1MOw
+
+Outside IP Addresses:
+  - Customer Gateway 		        : 96.119.245.213 
+  - Virtual Private Gateway	        : 52.88.9.94
+		
+Inside IP Addresses
+  - Customer Gateway         		: 169.254.12.86/30
+  - Virtual Private Gateway             : 169.254.12.85/30
+
+BGP Configuration Options:
+  - Customer Gateway ASN	          : 65000 
+  - Virtual Private  Gateway ASN          : 7224
+  - Neighbor IP Address     		  : 169.254.12.85
+  - Neighbor Hold Time       : 30
+
+
+ip a a 169.254.12.78/30 dev eth0
+ip a a 169.254.12.86/30 dev eth0
+

@@ -1,0 +1,39 @@
+remote 52.27.97.232 {
+        exchange_mode main;
+        lifetime time 28800 seconds;
+        proposal {
+                encryption_algorithm aes128;
+                hash_algorithm sha1;
+                authentication_method pre_shared_key;
+                dh_group 2;
+        }
+        generate_policy off;
+}
+
+remote 52.33.28.109 {
+        exchange_mode main;
+        lifetime time 28800 seconds;
+        proposal {
+                encryption_algorithm aes128;
+                hash_algorithm sha1;
+                authentication_method pre_shared_key;
+                dh_group 2;
+        }
+        generate_policy off;
+}
+
+sainfo address 169.254.12.126/30 any address 169.254.12.125/30 any {
+    pfs_group 2;
+    lifetime time 3600 seconds;
+    encryption_algorithm aes128;
+    authentication_algorithm hmac_sha1;
+    compression_algorithm deflate;
+}
+
+sainfo address 169.254.13.22/30 any address 169.254.13.21/30 any {
+    pfs_group 2;
+    lifetime time 3600 seconds;
+    encryption_algorithm aes128;
+    authentication_algorithm hmac_sha1;
+    compression_algorithm deflate;
+}

@@ -1,0 +1,22 @@
+hostname hybrid-cloud-poc1
+password HYBcloudP0c
+enable password HYBcloudP0c
+!
+log file /var/log/quagga/bgpd
+!debug bgp events
+!debug bgp zebra
+debug bgp updates
+!
+router bgp 65000
+bgp router-id 96.119.245.213
+network 169.254.12.126/30
+network 169.254.13.22/30
+network 0.0.0.0/0
+!
+! aws tunnel #1 neighbour
+neighbor 169.254.12.125 remote-as 7224
+!
+! aws tunnel #2 neighbour
+neighbor 169.254.13.21 remote-as 7224
+!
+line vty
